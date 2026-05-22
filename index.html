@@ -54,13 +54,25 @@
     }
 
     .page-header {
-      background: radial-gradient(circle at top left, rgba(246, 195, 67, 0.22), transparent 32%),
+      background:
+        linear-gradient(rgba(0, 105, 52, 0.86), rgba(0, 133, 66, 0.88)),
+        radial-gradient(circle at top left, rgba(246, 195, 67, 0.28), transparent 34%),
         linear-gradient(135deg, var(--green-dark), var(--green));
       color: #ffffff;
-      padding: 72px 20px 56px;
+      padding: 58px 20px 54px;
       text-align: center;
       position: relative;
       overflow: hidden;
+      min-height: 430px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      /* Para usar imagem de fundo depois, substitua o background acima por:
+      background:
+        linear-gradient(rgba(0, 105, 52, 0.82), rgba(0, 133, 66, 0.86)),
+        url('assets/background-regulamento.jpg') center/cover no-repeat;
+      */
     }
 
     .page-header::after {
@@ -77,8 +89,36 @@
     .header-content {
       position: relative;
       z-index: 2;
-      max-width: 960px;
+      max-width: 980px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .campaign-logo {
+      width: min(260px, 70vw);
+      max-height: 120px;
+      object-fit: contain;
+      margin-bottom: 22px;
+      filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.18));
+    }
+
+    .campaign-logo-placeholder {
+      width: min(260px, 70vw);
+      min-height: 92px;
+      border: 1px dashed rgba(255, 255, 255, 0.55);
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      color: rgba(255, 255, 255, 0.86);
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.08);
     }
 
     .eyebrow {
@@ -109,20 +149,27 @@
     }
 
     .quick-info {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(220px, 1fr));
       justify-content: center;
-      flex-wrap: wrap;
       gap: 12px;
       margin-top: 26px;
+      width: min(760px, 100%);
     }
 
     .quick-info span {
       background: rgba(255, 255, 255, 0.13);
       border: 1px solid rgba(255, 255, 255, 0.22);
-      padding: 10px 14px;
-      border-radius: 14px;
+      padding: 12px 16px;
+      border-radius: 16px;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 700;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      backdrop-filter: blur(8px);
     }
 
     .container {
@@ -303,16 +350,19 @@
     }
 
     .official-seal {
-      margin-top: 18px;
+      margin-top: 12px;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 10px;
       background: rgba(255,255,255,0.12);
       border: 1px solid rgba(255,255,255,0.2);
       border-radius: 999px;
       padding: 10px 16px;
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 800;
+      text-align: center;
+      backdrop-filter: blur(8px);
     }
 
     .footer {
@@ -371,11 +421,12 @@
 
     @media (max-width: 520px) {
       .page-header {
-        padding: 52px 18px 42px;
+        padding: 42px 18px 40px;
+        min-height: auto;
       }
 
       .quick-info {
-        display: grid;
+        grid-template-columns: 1fr;
       }
 
       .section-title {
@@ -390,6 +441,11 @@
 
   <header class="page-header">
     <div class="header-content">
+      <!-- Para usar a logo oficial, envie o arquivo para a pasta assets e troque o bloco abaixo por:
+      <img src="assets/logo-torcida-premiada.png" alt="Torcida Premiada Pérola" class="campaign-logo" />
+      -->
+      <div class="campaign-logo-placeholder">Sua logo aqui</div>
+
       <span class="eyebrow">Regulamento Oficial</span>
       <h1>Torcida Premiada Pérola</h1>
       <p class="subtitle">
@@ -442,7 +498,7 @@
         <div class="section-title"><span class="number">01</span><h2>Sobre a campanha</h2></div>
         <p>A campanha promocional denominada <strong>“Torcida Premiada Pérola”</strong> é realizada pelo <strong>Pérola Supermercados</strong>, com o objetivo de promover ações de relacionamento com seus clientes, incentivar as compras nas lojas participantes e premiar consumidores conforme as condições previstas neste regulamento.</p>
         <p><strong>Empresa promotora:</strong> Pérola Supermercados.</p>
-        <p><strong>Razão social e CNPJ:</strong> Pérola Distribuição e Logística S/A - 06.204.131/0016-53.</p>
+        <p><strong>Razão social e CNPJ:</strong> inserir dados oficiais da empresa responsável pela campanha.</p>
         <p>A participação nesta campanha implica na aceitação total e irrestrita de todos os termos e condições aqui descritos.</p>
       </article>
 
