@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regulamento Oficial | Torcida Premiada Pérola</title>
+  <meta name="description" content="Regulamento oficial da campanha Torcida Premiada Pérola. Confira as regras, condições de participação, sorteios, premiações e informações importantes." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Regulamento Oficial | Torcida Premiada Pérola" />
+  <meta property="og:description" content="Confira todas as regras, critérios de participação e informações oficiais da campanha Torcida Premiada Pérola." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <style>
+    :root {
+      --green: #008542;
+      --green-dark: #006934;
+      --yellow: #f6c343;
+      --bg: #f8f9fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --danger: #b91c1c;
+      --shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--green), var(--yellow));
+      z-index: 9999;
+    }
+
+    .page-header {
+      background: radial-gradient(circle at top left, rgba(246, 195, 67, 0.22), transparent 32%),
+        linear-gradient(135deg, var(--green-dark), var(--green));
+      color: #ffffff;
+      padding: 72px 20px 56px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-header::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      right: -90px;
+      bottom: -110px;
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 2;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 5vw, 56px);
+      line-height: 1.08;
+      margin-bottom: 18px;
+      font-weight: 900;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      max-width: 760px;
+      margin: 0 auto 28px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .quick-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .quick-info span {
+      background: rgba(255, 255, 255, 0.13);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      padding: 10px 14px;
+      border-radius: 14px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 34px 20px 70px;
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 24px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+    }
+
+    .sidebar h2 {
+      font-size: 16px;
+      margin-bottom: 14px;
+      color: var(--green-dark);
+    }
+
+    .nav-list {
+      list-style: none;
+      display: grid;
+      gap: 4px;
+    }
+
+    .nav-list a {
+      display: block;
+      text-decoration: none;
+      color: var(--muted);
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-size: 14px;
+      transition: 0.2s ease;
+    }
+
+    .nav-list a:hover {
+      background: rgba(0, 133, 66, 0.08);
+      color: var(--green-dark);
+    }
+
+    .content {
+      display: grid;
+      gap: 18px;
+    }
+
+    ::selection {
+      background: rgba(246, 195, 67, 0.35);
+      color: #111827;
+    }
+
+    .notice {
+      background: #fff7df;
+      border: 1px solid rgba(246, 195, 67, 0.55);
+      border-left: 5px solid var(--yellow);
+      padding: 18px 20px;
+      border-radius: 18px;
+      color: #57400a;
+    }
+
+    .section-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: clamp(22px, 4vw, 34px);
+      box-shadow: var(--shadow);
+      scroll-margin-top: 24px;
+    }
+
+    .section-title {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+
+    .number {
+      min-width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 133, 66, 0.1);
+      color: var(--green-dark);
+      font-weight: 900;
+    }
+
+    h2 {
+      font-size: clamp(22px, 3vw, 30px);
+      line-height: 1.2;
+      color: var(--text);
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 12px 0;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    strong {
+      color: #111827;
+    }
+
+    .highlight {
+      background: #f0fdf4;
+      border: 1px solid rgba(0, 133, 66, 0.22);
+      border-left: 5px solid var(--green);
+      padding: 16px 18px;
+      border-radius: 16px;
+      margin: 16px 0;
+    }
+
+    .warning {
+      background: #fff1f2;
+      border: 1px solid rgba(185, 28, 28, 0.18);
+      border-left: 5px solid var(--danger);
+      padding: 16px 18px;
+      border-radius: 16px;
+      margin: 16px 0;
+    }
+
+    .dates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+      gap: 10px;
+      margin: 18px 0;
+    }
+
+    .date-pill {
+      background: #f3f4f6;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px;
+      text-align: center;
+      font-weight: 800;
+      color: var(--green-dark);
+    }
+
+    .top-anchor {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--green);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 900;
+      box-shadow: 0 14px 30px rgba(0, 133, 66, 0.28);
+      transition: 0.2s ease;
+      z-index: 999;
+    }
+
+    .top-anchor:hover {
+      transform: translateY(-3px);
+      background: var(--green-dark);
+    }
+
+    .official-seal {
+      margin-top: 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .footer {
+      max-width: 1220px;
+      margin: 0 auto 50px;
+      padding: 0 20px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: relative;
+        top: auto;
+      }
+
+      .nav-list {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .sidebar,
+      .progress-bar,
+      .top-anchor {
+        display: none !important;
+      }
+
+      .container {
+        display: block;
+        max-width: 100%;
+        padding: 0;
+      }
+
+      .section-card {
+        box-shadow: none;
+        border: 1px solid #d1d5db;
+        break-inside: avoid;
+        margin-bottom: 18px;
+      }
+
+      .page-header {
+        padding: 40px 20px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .page-header {
+        padding: 52px 18px 42px;
+      }
+
+      .quick-info {
+        display: grid;
+      }
+
+      .section-title {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body id="top">
+  <div class="progress-bar" id="progressBar"></div>
+
+  <header class="page-header">
+    <div class="header-content">
+      <span class="eyebrow">Regulamento Oficial</span>
+      <h1>Torcida Premiada Pérola</h1>
+      <p class="subtitle">
+        Confira todas as regras, condições de participação, critérios de premiação, sorteios e informações importantes da campanha.
+      </p>
+
+      <div class="official-seal">
+        Documento institucional oficial da campanha
+      </div>
+
+      <div class="quick-info">
+        <span>Última atualização: 22/05/2026</span>
+        <span>Sorteios aos sábados, às 12h</span>
+        <span>Lojas: Bairro de Lourdes e Calixtópolis</span>
+        <span>Documento oficial da campanha</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar" aria-label="Menu do regulamento">
+      <h2>Navegação</h2>
+      <ul class="nav-list">
+        <li><a href="#sobre">1. Sobre a campanha</a></li>
+        <li><a href="#periodo">2. Período</a></li>
+        <li><a href="#lojas">3. Lojas participantes</a></li>
+        <li><a href="#participacao">4. Quem pode participar</a></li>
+        <li><a href="#como-participar">5. Como participar</a></li>
+        <li><a href="#cupom-extra">6. Cupom extra</a></li>
+        <li><a href="#produtos">7. Produtos participantes</a></li>
+        <li><a href="#restricoes">8. Restrições</a></li>
+        <li><a href="#sorteios">9. Sorteios</a></li>
+        <li><a href="#premiacao">10. Premiação</a></li>
+        <li><a href="#contato">11. Contato</a></li>
+        <li><a href="#retirada">12. Retirada</a></li>
+        <li><a href="#desclassificacao">13. Desclassificação</a></li>
+        <li><a href="#imagem">14. Direito de imagem</a></li>
+        <li><a href="#lgpd">15. Dados pessoais</a></li>
+        <li><a href="#forca-maior">16. Força maior</a></li>
+        <li><a href="#finais">17. Considerações finais</a></li>
+      </ul>
+    </aside>
+
+    <section class="content">
+      <div class="notice">
+        <strong>Atenção:</strong> este documento reúne as regras oficiais da campanha “Torcida Premiada Pérola”. A participação na campanha implica na aceitação integral deste regulamento. Leia atentamente antes de participar.
+      </div>
+
+      <article class="section-card" id="sobre">
+        <div class="section-title"><span class="number">01</span><h2>Sobre a campanha</h2></div>
+        <p>A campanha promocional denominada <strong>“Torcida Premiada Pérola”</strong> é realizada pelo <strong>Pérola Supermercados</strong>, com o objetivo de promover ações de relacionamento com seus clientes, incentivar as compras nas lojas participantes e premiar consumidores conforme as condições previstas neste regulamento.</p>
+        <p><strong>Empresa promotora:</strong> Pérola Supermercados.</p>
+        <p><strong>Razão social e CNPJ:</strong> Pérola Distribuição e Logística S/A - 06.204.131/0016-53.</p>
+        <p>A participação nesta campanha implica na aceitação total e irrestrita de todos os termos e condições aqui descritos.</p>
+      </article>
+
+      <article class="section-card" id="periodo">
+        <div class="section-title"><span class="number">02</span><h2>Período da campanha</h2></div>
+        <p>A campanha será válida durante o período promocional definido pelo Pérola Supermercados, com sorteios realizados nas seguintes datas:</p>
+        <div class="dates-grid">
+          <div class="date-pill">06/06/2026</div>
+          <div class="date-pill">13/06/2026</div>
+          <div class="date-pill">20/06/2026</div>
+          <div class="date-pill">27/06/2026</div>
+          <div class="date-pill">04/07/2026</div>
+          <div class="date-pill">11/07/2026</div>
+          <div class="date-pill">18/07/2026</div>
+        </div>
+        <p>Todos os sorteios serão realizados às <strong>12h00</strong>, podendo ser transmitidos ao vivo pelas redes sociais oficiais da empresa.</p>
+        <p>O Pérola Supermercados reserva-se o direito de alterar datas, horários, formato dos sorteios ou demais condições da campanha em casos de necessidade operacional, força maior, problemas técnicos ou situações excepcionais, mediante comunicação em seus canais oficiais.</p>
+      </article>
+
+      <article class="section-card" id="lojas">
+        <div class="section-title"><span class="number">03</span><h2>Lojas participantes</h2></div>
+        <p>Participam desta campanha as seguintes unidades:</p>
+        <ul>
+          <li><strong>Pérola Supermercado Bairro de Lourdes</strong></li>
+          <li><strong>Pérola Supermercado Calixtópolis</strong></li>
+        </ul>
+        <p>O cliente deverá depositar seu cupom exclusivamente na urna correspondente à loja onde realizou sua compra.</p>
+      </article>
+
+      <article class="section-card" id="participacao">
+        <div class="section-title"><span class="number">04</span><h2>Quem pode participar</h2></div>
+        <p>Poderão participar desta campanha pessoas físicas residentes no Brasil que realizarem compras válidas nas lojas participantes, conforme as condições deste regulamento.</p>
+        <p>Participantes menores de 18 anos somente poderão receber premiações mediante acompanhamento de responsável legal devidamente identificado.</p>
+        <div class="highlight">
+          <strong>Funcionários:</strong> colaboradores do Pérola Supermercados não participarão dos sorteios destinados ao público geral. Para funcionários, haverá urna e sorteio interno específico, conforme critérios definidos pela empresa.
+        </div>
+      </article>
+
+      <article class="section-card" id="como-participar">
+        <div class="section-title"><span class="number">05</span><h2>Como participar</h2></div>
+        <p>A cada compra no valor mínimo de <strong>R$ 100,00</strong> em uma única compra e em um único cupom fiscal, o cliente terá direito a <strong>01 cupom promocional</strong>.</p>
+        <p>O participante deverá preencher corretamente o cupom promocional com seus dados pessoais e depositá-lo na urna oficial da campanha localizada na unidade participante correspondente.</p>
+        <p>Os dados preenchidos deverão estar legíveis, completos e corretos. Cupons com informações incompletas, ilegíveis, rasuradas ou adulteradas poderão ser desclassificados.</p>
+      </article>
+
+      <article class="section-card" id="cupom-extra">
+        <div class="section-title"><span class="number">06</span><h2>Cupom extra</h2></div>
+        <p>O participante poderá receber <strong>01 cupom promocional extra</strong> caso sua compra contenha no mínimo <strong>03 produtos das marcas participantes</strong> da campanha.</p>
+        <div class="highlight">
+          Mesmo que a compra contenha mais de 03 produtos participantes, será concedido no máximo <strong>01 cupom extra</strong> por compra válida.
+        </div>
+        <p>Exemplo:</p>
+        <ul>
+          <li>Compra acima de R$ 100,00 = 01 cupom;</li>
+          <li>Compra contendo no mínimo 03 produtos participantes = +01 cupom extra;</li>
+          <li>Total máximo por compra válida: 02 cupons promocionais.</li>
+        </ul>
+      </article>
+
+      <article class="section-card" id="produtos">
+        <div class="section-title"><span class="number">07</span><h2>Produtos participantes</h2></div>
+        <p>A relação oficial de produtos e marcas participantes estará disponível nas lojas participantes, nos materiais oficiais da campanha e nos canais oficiais do Pérola Supermercados.</p>
+        <div class="highlight">
+          <strong>Lista de marcas/produtos participantes:</strong> inserir aqui a relação oficial após definição final da campanha.
+        </div>
+        <p>A organização reserva-se o direito de atualizar, incluir ou remover produtos participantes ao longo da campanha, conforme necessidade operacional ou disponibilidade comercial.</p>
+      </article>
+
+      <article class="section-card" id="restricoes">
+        <div class="section-title"><span class="number">08</span><h2>Restrições e condutas proibidas</h2></div>
+        <p>Não será permitida a divisão proposital de compras em múltiplos cupons fiscais com o objetivo de obtenção indevida de cupons promocionais adicionais.</p>
+        <div class="warning">
+          Compras realizadas de forma fracionada no mesmo ato da compra, com finalidade de burlar as regras da campanha, poderão ser invalidadas pela organização.
+        </div>
+        <p>Também poderão ser desclassificados participantes que utilizarem informações falsas, apresentarem cupons adulterados, tentarem fraudar a campanha, reutilizarem comprovantes ou adotarem qualquer prática considerada irregular pela organização.</p>
+      </article>
+
+      <article class="section-card" id="sorteios">
+        <div class="section-title"><span class="number">09</span><h2>Sorteios</h2></div>
+        <p>Os sorteios serão realizados manualmente, mediante retirada aleatória de cupons das urnas oficiais da campanha.</p>
+        <p>As urnas permanecerão lacradas até o momento do sorteio. Durante os sorteios, as urnas poderão ser abertas por representantes da organização, os cupons serão misturados manualmente e a retirada será realizada de forma aleatória.</p>
+        <p>Os sorteios poderão ser transmitidos ao vivo pelas redes sociais oficiais do Pérola Supermercados.</p>
+        <p>Eventuais falhas técnicas, oscilações de internet, interrupções de transmissão ou problemas nas plataformas digitais não invalidarão os resultados dos sorteios realizados.</p>
+      </article>
+
+      <article class="section-card" id="premiacao">
+        <div class="section-title"><span class="number">10</span><h2>Premiação</h2></div>
+        <p>Os participantes poderão concorrer a diversos prêmios promocionais, incluindo televisores, bicicletas, kits churrasco, camisetas oficiais da Seleção Brasileira Copa 2026, entre outros brindes e premiações definidos pela organização.</p>
+        <p>As imagens utilizadas nos materiais promocionais são meramente ilustrativas.</p>
+        <div class="highlight">
+          Os prêmios não poderão ser convertidos em dinheiro, trocados por outros produtos ou personalizados conforme preferência do ganhador.
+        </div>
+        <p>Em casos excepcionais de indisponibilidade de estoque, modelo ou fabricação, a organização poderá substituir o prêmio por item equivalente de valor similar.</p>
+      </article>
+
+      <article class="section-card" id="contato">
+        <div class="section-title"><span class="number">11</span><h2>Contato com o ganhador</h2></div>
+        <p>Após a realização do sorteio, a equipe do Pérola Supermercados realizará contato oficial com o participante contemplado utilizando os dados informados no cupom promocional.</p>
+        <ul>
+          <li>Até 03 tentativas de contato por ligação telefônica;</li>
+          <li>Até 01 tentativa de contato via WhatsApp.</li>
+        </ul>
+        <p>É de inteira responsabilidade do participante preencher corretamente seus dados de contato no cupom promocional.</p>
+        <p>Caso o participante não seja localizado ou não responda dentro do prazo estabelecido pela organização, um novo sorteio poderá ser realizado para definição de novo ganhador.</p>
+      </article>
+
+      <article class="section-card" id="retirada">
+        <div class="section-title"><span class="number">12</span><h2>Retirada do prêmio</h2></div>
+        <div class="highlight">
+          O participante contemplado terá o prazo máximo de <strong>07 dias corridos</strong>, contados a partir do contato oficial da organização, para retirada do prêmio.
+        </div>
+        <p>A retirada deverá ser realizada em local definido pelo Pérola Supermercados, mediante apresentação de documento oficial com foto, CPF e demais comprovações solicitadas pela organização.</p>
+        <p>Participantes menores de idade deverão estar acompanhados de responsável legal devidamente identificado.</p>
+        <p>O recebimento do prêmio poderá exigir assinatura de comprovante de entrega e autorização de registro fotográfico.</p>
+        <p>O não comparecimento dentro do prazo estabelecido poderá caracterizar renúncia automática ao prêmio, ficando a organização autorizada a realizar novo sorteio.</p>
+      </article>
+
+      <article class="section-card" id="desclassificacao">
+        <div class="section-title"><span class="number">13</span><h2>Desclassificação</h2></div>
+        <p>Serão automaticamente desclassificados os participantes que:</p>
+        <ul>
+          <li>apresentarem cupons rasurados, adulterados ou ilegíveis;</li>
+          <li>utilizarem informações falsas;</li>
+          <li>tentarem manipular ou fraudar a campanha;</li>
+          <li>descumprirem quaisquer regras deste regulamento;</li>
+          <li>utilizarem práticas consideradas abusivas ou irregulares;</li>
+          <li>tentarem obter vantagem indevida;</li>
+          <li>realizarem fracionamento proposital de compras para obtenção irregular de cupons;</li>
+          <li>ou adotarem qualquer comportamento incompatível com a boa-fé e integridade da campanha.</li>
+        </ul>
+        <p>A decisão da organização será soberana e irrecorrível nos casos de desclassificação.</p>
+      </article>
+
+      <article class="section-card" id="imagem">
+        <div class="section-title"><span class="number">14</span><h2>Direito de uso de imagem</h2></div>
+        <p>Ao participar da campanha, os participantes autorizam gratuitamente o Pérola Supermercados a utilizar nome, imagem, voz, fotografias, vídeos e depoimentos para fins de divulgação institucional e promocional relacionados à campanha “Torcida Premiada Pérola”.</p>
+        <p>A divulgação poderá ocorrer em redes sociais, materiais impressos, site oficial, vídeos promocionais e campanhas publicitárias, sem qualquer ônus adicional à organização.</p>
+      </article>
+
+      <article class="section-card" id="lgpd">
+        <div class="section-title"><span class="number">15</span><h2>Dados pessoais e privacidade</h2></div>
+        <p>Os dados pessoais fornecidos pelos participantes serão utilizados exclusivamente para operacionalização da campanha, validação de participação, contato com ganhadores, entrega de premiações e divulgação institucional relacionada à campanha.</p>
+        <p>O Pérola Supermercados compromete-se a tratar os dados pessoais em conformidade com a Lei Geral de Proteção de Dados Pessoais, Lei nº 13.709/2018.</p>
+        <p>Os dados poderão ser armazenados pelo período necessário para cumprimento das finalidades da campanha e obrigações legais aplicáveis.</p>
+      </article>
+
+      <article class="section-card" id="forca-maior">
+        <div class="section-title"><span class="number">16</span><h2>Instabilidades, imprevistos e força maior</h2></div>
+        <p>O Pérola Supermercados não será responsabilizado por falhas técnicas, indisponibilidade de internet, problemas em redes sociais, interrupções de transmissão, falhas de energia, problemas em operadoras telefônicas ou quaisquer situações decorrentes de caso fortuito ou força maior.</p>
+        <p>A organização poderá, a seu exclusivo critério, adiar sorteios, alterar horários, modificar procedimentos operacionais, substituir premiações, suspender temporariamente ou encerrar a campanha caso ocorram situações excepcionais que comprometam a segurança, integridade ou viabilidade da ação promocional.</p>
+      </article>
+
+      <article class="section-card">
+        <div class="section-title"><span class="number">★</span><h2>Informações importantes</h2></div>
+
+        <div class="warning">
+          O preenchimento correto do cupom promocional é de inteira responsabilidade do participante.
+        </div>
+
+        <div class="warning">
+          Cupons rasurados, ilegíveis, adulterados ou com dados incompletos poderão ser invalidados sem aviso prévio.
+        </div>
+
+        <div class="highlight">
+          O participante declara estar ciente e de acordo com todas as regras deste regulamento ao participar da campanha.
+        </div>
+      </article>
+
+      <article class="section-card" id="finais">
+        <div class="section-title"><span class="number">17</span><h2>Considerações finais</h2></div>
+        <p>A participação nesta campanha implica na aceitação total e irrestrita de todos os termos deste regulamento.</p>
+        <p>Os casos omissos, dúvidas, divergências ou situações não previstas neste regulamento serão analisados e decididos exclusivamente pelo Pérola Supermercados, sendo suas decisões soberanas e irrecorríveis.</p>
+        <p>Este regulamento poderá ser atualizado, alterado ou ajustado a qualquer momento, mediante publicação nos canais oficiais da campanha.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Versão do documento:</strong> Regulamento Oficial - Torcida Premiada Pérola - v1.0</p>
+    <p><strong>Torcida Premiada Pérola</strong></p>
+    <p>Regulamento oficial da campanha realizada pelo Pérola Supermercados.</p>
+    <p>Última atualização: 22/05/2026.</p>
+  </footer>
+
+  <a href="#top" class="top-anchor" aria-label="Voltar ao topo">↑</a>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const currentYear = new Date().getFullYear();
+      console.log(`Regulamento oficial carregado - ${currentYear}`);
+    });
+
+    const progressBar = document.getElementById('progressBar');
+
+    function updateProgressBar() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressBar.style.width = progress + '%';
+    }
+
+    window.addEventListener('scroll', updateProgressBar);
+    updateProgressBar();
+  </script>
+</body>
+</html>
